@@ -7,6 +7,8 @@ import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from textwrap import dedent
+from dataclasses import dataclass
+from pathlib import Path
 from typing import Optional, TYPE_CHECKING
 
 import numpy as np
@@ -55,18 +57,8 @@ class VisualEngineConfig:
     shader_dir: Path
     preset_path: Path
     window: WindowConfig = field(default_factory=WindowConfig)
+    window: WindowConfig = WindowConfig()
     swap_interval: int = 1
-
-    def __post_init__(self) -> None:
-        # ``dataclasses`` only complains about mutable defaults when the
-        # *class* itself is used as the default value. Some older copies of the
-        # project might still serialise that older form, so double-check here
-        # to provide a clearer error message instead of the cryptic ValueError.
-        if isinstance(self.window, type):
-            raise TypeError(
-                "VisualEngineConfig.window must be an instance of WindowConfig, "
-                "not the class itself."
-            )
 
 
 class VisualEngine:
@@ -128,6 +120,7 @@ class VisualEngine:
 
     def load_graph(self, graph: EffectGraph) -> None:
         """Install an already constructed effect graph."""
+        """Install an already constructed effect graph.""
 
         self._graph = graph
 
@@ -231,3 +224,12 @@ class VisualEngine:
 
     def _default_vertex_shader(self) -> str:
         return DEFAULT_VERTEX_SHADER
+        return """
+        #version 330
+        in vec2 in_vert;
+        out vec2 v_uv;
+        void main() {
+            v_uv = in_vert * 0.5 + 0.5;
+            gl_Position = vec4(in_vert, 0.0, 1.0);
+        }
+        """
