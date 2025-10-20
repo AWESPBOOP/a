@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "identifier": "supernova",
+      "type": "shader",
+      "inputs": [
+        {
+          "name": "bands",
+          "source": "audio.bands",
+          "scale": 1.5,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "shader": "particle_supernova",
+        "burst": 1.0
+      }
+    }
+  ],
+  "composites": []
+}

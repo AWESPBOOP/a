@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "identifier": "fluid",
+      "type": "shader",
+      "inputs": [
+        {
+          "name": "high",
+          "source": "audio.bands[96:128]",
+          "scale": 1.3,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "shader": "fluid_sprites",
+        "viscosity": 0.7
+      }
+    }
+  ],
+  "composites": []
+}

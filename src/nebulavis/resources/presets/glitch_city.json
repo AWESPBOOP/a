@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "identifier": "city",
+      "type": "shader",
+      "inputs": [
+        {
+          "name": "mid",
+          "source": "audio.bands[16:96]",
+          "scale": 1.2,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "shader": "glitch_city",
+        "glitch": 0.4
+      }
+    }
+  ],
+  "composites": [
+    {
+      "mode": "screen",
+      "sources": [
+        "city"
+      ]
+    }
+  ]
+}

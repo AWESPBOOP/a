@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "identifier": "tunnel",
+      "type": "shader",
+      "inputs": [
+        {
+          "name": "bass",
+          "source": "audio.bands[0:16]",
+          "scale": 1.5,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "shader": "bass_tunnel",
+        "warp": 0.8
+      },
+      "enabled": true
+    },
+    {
+      "identifier": "bloom",
+      "type": "postfx",
+      "inputs": [
+        {
+          "name": "input",
+          "source": "tunnel",
+          "scale": 1.0,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "strength": 0.6
+      },
+      "enabled": true
+    }
+  ],
+  "composites": []
+}
