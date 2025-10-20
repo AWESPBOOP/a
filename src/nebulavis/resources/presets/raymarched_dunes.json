@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "identifier": "terrain",
+      "type": "shader",
+      "inputs": [
+        {
+          "name": "bands",
+          "source": "audio.bands",
+          "scale": 0.9,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "shader": "ray_dunes",
+        "detail": 0.5
+      }
+    }
+  ],
+  "composites": []
+}

@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "identifier": "wire",
+      "type": "shader",
+      "inputs": [
+        {
+          "name": "bass",
+          "source": "audio.bands[0:32]",
+          "scale": 1.0,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "shader": "wireframe_terrain",
+        "height": 0.6
+      }
+    }
+  ],
+  "composites": []
+}

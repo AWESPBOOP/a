@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "identifier": "sun",
+      "type": "shader",
+      "inputs": [
+        {
+          "name": "bands",
+          "source": "audio.bands",
+          "scale": 1.2,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "shader": "chroma_sunburst",
+        "hueShift": 0.2
+      }
+    }
+  ],
+  "composites": []
+}

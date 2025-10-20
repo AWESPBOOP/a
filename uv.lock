@@ -1,0 +1,128 @@
+version = 1
+revision = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "numpy"
+version = "1.26.4"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "scipy"
+version = "1.11.4"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "sounddevice"
+version = "0.4.6"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "soundfile"
+version = "0.12.1"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "librosa"
+version = "0.10.1"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "numba"
+version = "0.58.1"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "moderngl"
+version = "5.8.2"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "glfw"
+version = "2.7.0"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "dearpygui"
+version = "1.11.1"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "Pillow"
+version = "10.1.0"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "requests"
+version = "2.31.0"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "aiohttp"
+version = "3.9.3"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "websockets"
+version = "12.0"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "watchdog"
+version = "3.0.0"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "psutil"
+version = "5.9.8"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "ffmpeg-python"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "typer"
+version = "0.9.0"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "pydantic"
+version = "2.6.4"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "cachetools"
+version = "5.3.3"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "qasync"
+version = "0.27.1"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "python-dateutil"
+version = "2.8.2"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "colour-science"
+version = "0.4.4"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "opencv-python-headless"
+version = "4.9.0.80"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "pytest"
+version = "7.4.4"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "pytest-asyncio"
+version = "0.23.5"
+source = { registry = "https://pypi.org/simple" }
