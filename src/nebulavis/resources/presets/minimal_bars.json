@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "identifier": "bars",
+      "type": "shader",
+      "inputs": [
+        {
+          "name": "bands",
+          "source": "audio.bands",
+          "scale": 1.0,
+          "bias": 0.0
+        }
+      ],
+      "params": {
+        "shader": "minimal_bars",
+        "smoothing": 0.5
+      }
+    }
+  ],
+  "composites": []
+}
