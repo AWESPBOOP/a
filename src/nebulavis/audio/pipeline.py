@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import AsyncIterator
 
 
@@ -16,8 +16,8 @@ LOGGER = logging.getLogger(__name__)
 
 @dataclass(slots=True)
 class AudioPipelineConfig:
-    capture: AudioCaptureConfig = AudioCaptureConfig()
-    analyzer: AudioAnalyzerConfig = AudioAnalyzerConfig()
+    capture: AudioCaptureConfig = field(default_factory=AudioCaptureConfig)
+    analyzer: AudioAnalyzerConfig = field(default_factory=AudioAnalyzerConfig)
 
 
 class AudioPipeline:
