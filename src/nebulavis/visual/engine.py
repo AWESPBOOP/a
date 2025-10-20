@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import logging
 import time
+from dataclasses import dataclass, field
+from pathlib import Path
+from textwrap import dedent
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional, TYPE_CHECKING
@@ -27,6 +30,19 @@ from .graph import EffectGraph
 LOGGER = logging.getLogger(__name__)
 
 
+DEFAULT_VERTEX_SHADER = dedent(
+    """
+    #version 330
+    in vec2 in_vert;
+    out vec2 v_uv;
+    void main() {
+        v_uv = in_vert * 0.5 + 0.5;
+        gl_Position = vec4(in_vert, 0.0, 1.0);
+    }
+    """
+).strip()
+
+
 @dataclass(slots=True)
 class WindowConfig:
     width: int = 1280
@@ -40,6 +56,7 @@ class WindowConfig:
 class VisualEngineConfig:
     shader_dir: Path
     preset_path: Path
+    window: WindowConfig = field(default_factory=WindowConfig)
     window: WindowConfig = WindowConfig()
     swap_interval: int = 1
 
@@ -102,6 +119,7 @@ class VisualEngine:
         LOGGER.info("Loaded preset %s", path)
 
     def load_graph(self, graph: EffectGraph) -> None:
+        """Install an already constructed effect graph."""
         """Install an already constructed effect graph.""
 
         self._graph = graph
@@ -205,6 +223,7 @@ class VisualEngine:
         return program
 
     def _default_vertex_shader(self) -> str:
+        return DEFAULT_VERTEX_SHADER
         return """
         #version 330
         in vec2 in_vert;
