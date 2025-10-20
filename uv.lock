@@ -1,0 +1,101 @@
+version = 1
+
+[[package]]
+name = "numpy"
+version = "1.26.4"
+
+[[package]]
+name = "scipy"
+version = "1.11.4"
+
+[[package]]
+name = "sounddevice"
+version = "0.4.6"
+
+[[package]]
+name = "soundfile"
+version = "0.12.1"
+
+[[package]]
+name = "librosa"
+version = "0.10.1"
+
+[[package]]
+name = "numba"
+version = "0.58.1"
+
+[[package]]
+name = "moderngl"
+version = "5.8.2"
+
+[[package]]
+name = "glfw"
+version = "2.7.0"
+
+[[package]]
+name = "dearpygui"
+version = "1.11.1"
+
+[[package]]
+name = "Pillow"
+version = "10.1.0"
+
+[[package]]
+name = "requests"
+version = "2.31.0"
+
+[[package]]
+name = "aiohttp"
+version = "3.9.3"
+
+[[package]]
+name = "websockets"
+version = "12.0"
+
+[[package]]
+name = "watchdog"
+version = "3.0.0"
+
+[[package]]
+name = "psutil"
+version = "5.9.8"
+
+[[package]]
+name = "ffmpeg-python"
+version = "0.2.0"
+
+[[package]]
+name = "typer"
+version = "0.9.0"
+
+[[package]]
+name = "pydantic"
+version = "2.6.4"
+
+[[package]]
+name = "cachetools"
+version = "5.3.3"
+
+[[package]]
+name = "qasync"
+version = "0.27.1"
+
+[[package]]
+name = "python-dateutil"
+version = "2.8.2"
+
+[[package]]
+name = "colour-science"
+version = "0.4.4"
+
+[[package]]
+name = "opencv-python-headless"
+version = "4.9.0.80"
+
+[[package]]
+name = "pytest"
+version = "7.4.4"
+
+[[package]]
+name = "pytest-asyncio"
+version = "0.23.5"
