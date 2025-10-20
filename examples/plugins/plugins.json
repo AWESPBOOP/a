@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    {
+      "name": "Example Shader Plugin",
+      "module": "examples.plugins.example_plugin",
+      "entry": "register"
+    }
+  ]
+}
